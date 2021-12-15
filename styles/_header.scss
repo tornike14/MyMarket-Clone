@@ -1,0 +1,7 @@
+header {
+    height: 200px;
+
+    @include flexCenter();
+
+    background-color: $mainColor;
+}
