@@ -1,0 +1,49 @@
+@media only screen and (max-width: $xs) {
+    .container {
+        max-width: 100%; 
+    }
+} 
+
+@media only screen and (min-width: $sm) {
+    .container {
+        max-width: 100%; 
+    }
+}
+
+@media only screen and (min-width: $md) {
+    .container {
+        max-width: 100%; 
+    }
+}
+
+@media only screen and (min-width: $lg) {
+    .container {
+        max-width: 100%; 
+    }
+}
+
+@media only screen and (min-width: $xl) {
+    .container {
+        max-width: 1200px; 
+    }
+}
+
+@media only screen and (min-width: $xxl) {
+    .container {
+        max-width: 1272px; 
+    }
+}
+
+.sm-svg {
+    width: 14px;
+    height: 14px;
+}
+
+.md-svg {
+    width: 16;
+    height: 16px;
+}
+
+.svg-hover:hover {
+    background-color: $iconHover;
+}
