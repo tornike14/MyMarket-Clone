@@ -29,6 +29,10 @@
                 display: none;
             }
         }
+
+        &__burger { 
+            padding: 18px 8px;
+        }
     }
 } 
 
@@ -62,6 +66,10 @@
             &::after {
                 display: none;
             }
+        }
+
+        &__burger { 
+            padding: 18px 8px;
         }
     }
 }
@@ -97,6 +105,10 @@
                 display: block;
             }
         }
+
+        &__burger { 
+            padding: 10px 8px;
+        }
     }
 }
 
@@ -130,6 +142,10 @@
             &::after {
                 display: block;
             }
+        }
+
+        &__burger { 
+            padding: 10px 8px;
         }
     }
 }
@@ -165,6 +181,10 @@
                 display: block;
             }
         }
+
+        &__burger { 
+            padding: 10px 8px;
+        }
     }
 }
 
@@ -198,6 +218,10 @@
             &::after {
                 display: block;
             }
+        }
+
+        &__burger { 
+            padding: 10px 8px;
         }
     }
 }
@@ -276,6 +300,56 @@
             height: 24px;
             border-radius: 2px;
             background-color: rgba(137, 150, 174, .25);
+        }
+    }
+
+    &__add_statement_btn {
+        border-radius: 20px;
+        border: 2px solid #f1f3f6;
+        height: 40px;
+        padding: 0 16px 0 12px;
+        max-width: 116px;
+        line-height: 17px;
+        background-color: transparent;
+        transition: .3s ease-in-out;
+
+        span {
+            font-size: 12px;
+        }
+
+        &:hover {
+            border: 2px solid $mainYellow;
+        }
+    }
+
+    &__navbar_item {
+        a {
+            transition: .2s ease-in-out;
+        }
+    }
+
+    &__user_profile_svg {
+        width: 40px;
+        height: 40px;
+        border: 2px solid $mainYellow;
+        cursor: pointer;
+    }
+
+    &__user_profile_text {
+        span {
+            font-size: 13px;
+            color: $blackText;
+            cursor: pointer;
+        }
+    }
+
+    &__burger {
+        cursor: pointer;
+        transition: .2s ease-in-out;
+
+        img {
+            width: 16px;
+            height: 12px;
         }
     }
 }
