@@ -1,25 +1,37 @@
 @media only screen and (max-width: $xs) {
-
+    .main_section {
+        height: auto;
+    }
 } 
 
 @media only screen and (min-width: $sm) {
-
+    .main_section {
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: $md) {
-
+    .main_section {
+        height: 600px;
+    }
 }
 
 @media only screen and (min-width: $lg) {
-
+    .main_section {
+        height: 600px;
+    }
 }
 
 @media only screen and (min-width: $xl) {
-
+    .main_section {
+        height: 600px;
+    }
 }
 
 @media only screen and (min-width: $xxl) {
-
+    .main_section {
+        height: 600px;
+    }
 }
 
 
@@ -73,6 +85,30 @@
     &__sales_btn_text {
         span {
             font-size: 12px;
+        }
+    }
+}
+
+// Main Section
+
+.main_section {
+    
+
+    &__filter {
+        width: 300px;
+        height: 600px;
+        padding: 30px 0 12px;
+        background-color: #fff;
+        border-radius: 16px;
+        position: absolute;
+        z-index: 100;
+
+        li {
+            margin: 0 20px 14px 28px;
+        }
+
+        &--icon {
+            margin-right: 10px;
         }
     }
 }
