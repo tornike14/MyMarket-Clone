@@ -315,6 +315,7 @@
 
         span {
             font-size: 12px;
+            font-feature-settings: "case" on;
         }
 
         &:hover {
