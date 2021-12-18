@@ -76,12 +76,6 @@ section {
     width: 100%;
 }
 
-.row>* {
-    width: auto;
-    padding-right: 12px;
-    padding-left: 12px;
-}
-
 .sm-svg {
     width: 14px;
     height: 14px;
@@ -147,4 +141,18 @@ section {
 
 .flex-gap {
     gap: 12px;
+}
+
+.text-dark {
+    color: #272a37 !important;
+}
+
+[class*=" col-"], [class^="col-"] {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.fixed {
+    width: 0;
 }
