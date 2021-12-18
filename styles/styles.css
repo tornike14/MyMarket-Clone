@@ -44,7 +44,7 @@
 
 @media only screen and (min-width: 1200px) {
   .container {
-    padding: 0 30px;
+    padding: 0 15px;
     max-width: 1200px;
   }
   .px_md_0 {
@@ -55,7 +55,6 @@
 
 @media only screen and (min-width: 1400px) {
   .container {
-    padding: 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 1272px;
@@ -437,11 +436,23 @@ section {
   .main_section {
     height: auto;
   }
+  __filter_data {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
 }
 
 @media only screen and (min-width: 576px) {
   .main_section {
     height: auto;
+  }
+  __filter_data {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
 }
 
@@ -449,11 +460,23 @@ section {
   .main_section {
     height: 600px;
   }
+  __filter_data {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .main_section {
     height: 600px;
+  }
+  __filter_data {
+    background-color: #fff;
+    width: calc(100% - 324px);
+    height: 100%;
+    padding: 40px;
   }
 }
 
@@ -461,11 +484,23 @@ section {
   .main_section {
     height: 600px;
   }
+  __filter_data {
+    background-color: #fff;
+    width: calc(100% - 324px);
+    height: 100%;
+    padding: 40px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
   .main_section {
     height: 600px;
+  }
+  .main_section__filter_data {
+    background-color: #fff;
+    width: calc(100% - 324px);
+    height: 100%;
+    padding: 40px;
   }
 }
 
@@ -541,8 +576,36 @@ section {
   margin: 0 20px 14px 28px;
 }
 
+.main_section__filter--item a {
+  color: #272a37;
+  text-decoration: none;
+}
+
+.main_section__filter--item a :hover {
+  color: #4a6cfa;
+  text-decoration: underline;
+}
+
+.main_section__filter--item a :hover svg {
+  fill: #272a37;
+}
+
+.main_section__filter--item button {
+  padding: 0;
+  margin: 12px 0 0 0;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .main_section__filter--icon {
   margin-right: 10px;
+}
+
+.main_section__filter--text span {
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 16px;
 }
 
 @font-face {

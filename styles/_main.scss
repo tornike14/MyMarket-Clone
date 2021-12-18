@@ -2,11 +2,25 @@
     .main_section {
         height: auto;
     }
+
+    &__filter_data {
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
 } 
 
 @media only screen and (min-width: $sm) {
     .main_section {
         height: auto;
+    }
+
+    &__filter_data {
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        padding: 0;
     }
 }
 
@@ -14,11 +28,25 @@
     .main_section {
         height: 600px;
     }
+
+    &__filter_data {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+    }
 }
 
 @media only screen and (min-width: $lg) {
     .main_section {
         height: 600px;
+    }
+
+    &__filter_data {
+        background-color: #fff;
+        width: calc(100% - 324px);
+        height: 100%;
+        padding: 40px;
     }
 }
 
@@ -26,11 +54,25 @@
     .main_section {
         height: 600px;
     }
+
+    &__filter_data {
+        background-color: #fff;
+        width: calc(100% - 324px);
+        height: 100%;
+        padding: 40px;
+    }
 }
 
 @media only screen and (min-width: $xxl) {
     .main_section {
         height: 600px;
+
+        &__filter_data {
+            background-color: #fff;
+            width: calc(100% - 324px);
+            height: 100%;
+            padding: 40px;
+        }
     }
 }
 
@@ -92,8 +134,6 @@
 // Main Section
 
 .main_section {
-    
-
     &__filter {
         width: 300px;
         height: 600px;
@@ -107,8 +147,43 @@
             margin: 0 20px 14px 28px;
         }
 
+        &--item {
+            a {
+                color: $blackText;
+                text-decoration: none;
+
+                :hover {
+                    color: #4a6cfa;
+                    text-decoration: underline;
+
+                    svg {
+                        fill: $blackText
+                    }
+                }
+            }
+
+            button {
+               padding: 0;
+               margin: 12px 0 0 0;
+               outline: none !important;
+               box-shadow: none !important;
+            }
+        }
+
         &--icon {
             margin-right: 10px;
         }
+        
+        &--text {
+            span {
+                font-size: 14px;
+                cursor: pointer;
+                line-height: 16px;
+            }
+        }
+    }
+
+    &__filter_data {
+
     }
 }
