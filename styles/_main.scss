@@ -714,3 +714,96 @@
         }
     }
 }
+
+// Sales Section
+
+.sales {
+    margin-bottom: 56px;
+
+    &__header {
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    &__content {
+        gap: 20px;
+    }
+
+    &__block {
+        width: 410px;
+    }
+
+    &__block_images {
+        border-radius: 16px;
+        padding: 12px;
+
+        &>* {
+            padding: 12px;
+        }
+
+        &--image {
+            height: 120px;
+            border-radius: 10px;
+            border: 1px solid #f4f4f4;
+            cursor: pointer;
+
+            .sales_hover {
+                position: absolute;
+                background-color: rgba(39,42,55,.95);
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transform: translate3d(0,100%,0);
+                transition: .3s ease-in-out;
+
+                div:first-child {
+                    line-height: 21px;
+                    color: #0ec604;
+                }
+
+                div:last-child {
+                    position: relative;
+                    font-size: 12px;
+                    line-height: 21px;
+                    color: #0ec604;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #fff;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                    }
+                }
+            }
+
+            &:hover {
+                .sales_hover {
+                    opacity: 1;
+                    transform: translateZ(0);
+                }
+            }
+        }
+    }
+
+    &__sm_card {
+        border-radius: 10px;
+        
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+}
