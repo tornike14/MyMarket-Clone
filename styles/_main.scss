@@ -18,6 +18,25 @@
             }
         }
     }
+
+    .tradeIn {
+        &__gif {
+            height: 150px;
+            margin-bottom: 0;
+        }
+    
+        &__content {
+            padding: 24px;
+            
+            h2 {
+                font-size: 18px;
+            }
+
+            a {
+                width: 100%;
+            }
+        }
+    }
 } 
 
 @media only screen and (min-width: $sm) {
@@ -33,6 +52,25 @@
 
         &__slider_box {
             padding: 0;
+
+            a {
+                width: 100%;
+            }
+        }
+    }
+
+    .tradeIn {
+        &__gif {
+            height: 150px;
+            margin-bottom: 20px;
+        }
+    
+        &__content {
+            padding: 30px 24px;
+
+            h2 {
+                font-size: 18px;
+            }
 
             a {
                 width: 100%;
@@ -60,6 +98,24 @@
             }
         }
     }
+
+    .tradeIn {
+        &__gif {
+            height: 320px;
+        }
+    
+        &__content {
+            padding: 0 24px 0 24px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            a {
+                width: 128px;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: $lg) {
@@ -80,6 +136,25 @@
                 width: 185px;
             }
         }
+    }
+
+    .tradeIn {
+        &__gif {
+            height: 320px;
+        }
+    
+        &__content {
+            padding: 0 24px 0 24px;
+            
+            h2 {
+                font-size: 24px;
+            }
+
+            a {
+                width: 128px;
+            }
+        }
+        
     }
 }
 
@@ -102,6 +177,24 @@
             }
         }
     }
+
+    .tradeIn {
+        &__gif {
+            height: 320px;
+        }
+    
+        &__content {
+            padding: 0 24px 0 24px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            a {
+                width: 128px;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: $xxl) {
@@ -120,6 +213,27 @@
            
             a {
                 width: 185px;
+            }
+        }
+    }
+
+    .tradeIn {
+    
+        &__gif {
+            img {
+                height: 320px;
+            }
+        }
+    
+        &__content {
+            padding: 0 80px 0 88px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            a {
+                width: 128px;
             }
         }
     }
@@ -260,6 +374,41 @@
 
             &:hover {
                 background-color: #e6e6e6 !important;
+            }
+        }
+    }
+}
+
+// Trade In Section
+
+.tradeIn {
+    margin: 56px 0;
+
+    .row {
+        border-radius: 24px;
+    }
+
+    &__gif {
+        img {
+            object-fit: contain;
+        }
+    }
+
+    &__content {
+        &--text {
+            color: $greyText;
+            padding-top: 24px;
+            padding-bottom: 36px;
+        }
+
+        a {
+            color: #fff;
+            border-radius: 8px;
+            background-color: $mainYellow;
+
+            &:hover {
+                color: #fff;
+                opacity: .9;
             }
         }
     }

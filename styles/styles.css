@@ -486,6 +486,19 @@ section {
   .main_section__slider_box a {
     width: 100%;
   }
+  .tradeIn__gif {
+    height: 150px;
+    margin-bottom: 0;
+  }
+  .tradeIn__content {
+    padding: 24px;
+  }
+  .tradeIn__content h2 {
+    font-size: 18px;
+  }
+  .tradeIn__content a {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 576px) {
@@ -502,6 +515,19 @@ section {
     padding: 0;
   }
   .main_section__slider_box a {
+    width: 100%;
+  }
+  .tradeIn__gif {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .tradeIn__content {
+    padding: 30px 24px;
+  }
+  .tradeIn__content h2 {
+    font-size: 18px;
+  }
+  .tradeIn__content a {
     width: 100%;
   }
 }
@@ -522,6 +548,18 @@ section {
   .main_section__slider_box a {
     width: 185px;
   }
+  .tradeIn__gif {
+    height: 320px;
+  }
+  .tradeIn__content {
+    padding: 0 24px 0 24px;
+  }
+  .tradeIn__content h2 {
+    font-size: 24px;
+  }
+  .tradeIn__content a {
+    width: 128px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -539,6 +577,18 @@ section {
   }
   .main_section__slider_box a {
     width: 185px;
+  }
+  .tradeIn__gif {
+    height: 320px;
+  }
+  .tradeIn__content {
+    padding: 0 24px 0 24px;
+  }
+  .tradeIn__content h2 {
+    font-size: 24px;
+  }
+  .tradeIn__content a {
+    width: 128px;
   }
 }
 
@@ -558,6 +608,18 @@ section {
   .main_section__slider_box a {
     width: 170px;
   }
+  .tradeIn__gif {
+    height: 320px;
+  }
+  .tradeIn__content {
+    padding: 0 24px 0 24px;
+  }
+  .tradeIn__content h2 {
+    font-size: 24px;
+  }
+  .tradeIn__content a {
+    width: 128px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -575,6 +637,18 @@ section {
   }
   .main_section__slider_box a {
     width: 185px;
+  }
+  .tradeIn__gif img {
+    height: 320px;
+  }
+  .tradeIn__content {
+    padding: 0 80px 0 88px;
+  }
+  .tradeIn__content h2 {
+    font-size: 24px;
+  }
+  .tradeIn__content a {
+    width: 128px;
   }
 }
 
@@ -718,6 +792,36 @@ section {
 
 .main_section__slider_box a:hover {
   background-color: #e6e6e6 !important;
+}
+
+.tradeIn {
+  margin: 56px 0;
+}
+
+.tradeIn .row {
+  border-radius: 24px;
+}
+
+.tradeIn__gif img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.tradeIn__content--text {
+  color: #8996ae;
+  padding-top: 24px;
+  padding-bottom: 36px;
+}
+
+.tradeIn__content a {
+  color: #fff;
+  border-radius: 8px;
+  background-color: #fec900;
+}
+
+.tradeIn__content a:hover {
+  color: #fff;
+  opacity: .9;
 }
 
 @media only screen and (max-width: 576px) {
