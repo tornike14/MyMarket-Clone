@@ -156,3 +156,41 @@ section {
 .fixed {
     width: 0;
 }
+
+.feedback {
+    background-color: $mainYellow;
+    color: #fff;
+    position: fixed;
+    box-sizing: border-box;
+    direction: ltr !important;
+    width: 40px;
+    height: 110px;
+
+    right: 0;
+    top: 300px;
+
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    padding: 12px 14px 12px 12px;
+
+    font-size: 13px;
+    cursor: pointer;
+
+   
+}
+
+.feedback:hover {
+    box-shadow: 0 0 35px 2px rgb(0 0 0 / 24%);
+   
+}
+
+.feedback-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.feedback-iamge {
+    width: 20px;
+    height: 20px;
+}
