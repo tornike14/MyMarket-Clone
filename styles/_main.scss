@@ -47,6 +47,12 @@
             }
         }
     }
+
+    .categories {   
+        &__item {
+            width: 175px;
+        }
+    }
 } 
 
 @media only screen and (min-width: $sm) {
@@ -97,6 +103,12 @@
             }
         }
     }
+
+    .categories {   
+        &__item {
+            width: 175px;
+        }
+    }
 }
 
 @media only screen and (min-width: $md) {
@@ -144,6 +156,12 @@
             a {
                 width: 128px;
             }
+        }
+    }
+
+    .categories {   
+        &__item {
+            width: 175px;
         }
     }
 }
@@ -196,6 +214,12 @@
         }
         
     }
+
+    .categories {   
+        &__item {
+            width: 175px;
+        }
+    }
 }
 
 @media only screen and (min-width: $xl) {
@@ -243,6 +267,12 @@
             a {
                 width: 128px;
             }
+        }
+    }
+
+    .categories {   
+        &__item {
+            width: 175px;
         }
     }
 }
@@ -295,6 +325,12 @@
             a {
                 width: 128px;
             }
+        }
+    }
+
+    .categories {   
+        &__item {
+            width: 185px;
         }
     }
 }
@@ -546,6 +582,100 @@
     }
 }
 
+// VIP Products Section
+
+.vip_products {
+    margin-bottom: 56px;
+
+    &__wrapper {
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 40px 32px;
+
+        &--vip_icon {
+            border-radius: 11px;
+            padding: 0 7px;
+            height: 22px;
+            background-color: $mainYellow;
+            font-size: 10px;
+            font-weight: bold;
+        }
+    }
+
+    &__wrapper_header {
+        a {
+            font-size: 13px;
+            color: #4a6cfa!important;
+            text-decoration: underline;
+        }
+    }
+
+    &__wrapper_content {
+        gap: 24px;
+    }
+
+    &__wrapper_item {
+        a {
+            text-decoration: none;
+            width: 125px;
+            overflow: hidden;
+            display: inherit;
+
+
+            &:hover {
+                div:first-child {
+                    color: #4a6cfa !important;
+                    text-decoration: underline;
+                }
+
+                div:last-child {
+                    color: #4a6cfa !important;
+                }
+            }
+        }
+
+        &--img {
+            border-radius: 10px;
+            width: 125px;
+            height: 130px;
+            margin-bottom: 18px;
+
+            img {  
+                object-fit: cover;
+            }
+        }
+
+        &--info{          
+            div:first-child {
+                font-size: 14px;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden; 
+            }
+
+            div:last-child {
+                font-size: 12px;
+                color: $greyText;
+
+            }
+
+            .lari {
+                display: inline-block;
+                font-family: Lari!important;
+                font-size: inherit;
+                font-stretch: normal;
+                font-style: normal;
+                font-feature-settings: normal;
+                font-variant: normal;
+                line-height: 1;
+                text-rendering: auto; 
+            }
+        }
+        
+    }
+}
+
 // Categories Section
 
 .categories {
@@ -556,7 +686,6 @@
     }
 
     &__item {
-        width: 185px;
         text-decoration: none;
         
         &--img-wrapper {
