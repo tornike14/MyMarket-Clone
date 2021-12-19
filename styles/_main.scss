@@ -19,6 +19,16 @@
         }
     }
 
+    .search_more { 
+        &__tabs {
+            margin-top: 30px;
+        }
+
+        &__option {
+            width: 380px;
+        }
+    }
+
     .tradeIn {
         &__gif {
             height: 150px;
@@ -56,6 +66,16 @@
             a {
                 width: 100%;
             }
+        }
+    }
+
+    .search_more { 
+        &__tabs {
+            margin-top: 30px;
+        }
+
+        &__option {
+            width: 400px;
         }
     }
 
@@ -99,6 +119,16 @@
         }
     }
 
+    .search_more { 
+        &__tabs {
+            margin-top: 0;
+        }
+
+        &__option {
+            width: 500px;
+        }
+    }
+
     .tradeIn {
         &__gif {
             height: 320px;
@@ -135,6 +165,16 @@
             a {
                 width: 185px;
             }
+        }
+    }
+
+    .search_more { 
+        &__tabs {
+            margin-top: 0;
+        }
+
+        &__option {
+            width: 380px;
         }
     }
 
@@ -178,6 +218,16 @@
         }
     }
 
+    .search_more { 
+        &__tabs {
+            margin-top: 0;
+        }
+
+        &__option {
+            width: 380px;
+        }
+    }
+
     .tradeIn {
         &__gif {
             height: 320px;
@@ -214,6 +264,16 @@
             a {
                 width: 185px;
             }
+        }
+    }
+
+    .search_more { 
+        &__tabs {
+            margin-top: 0;
+        }
+
+        &__option {
+            width: 400px;
         }
     }
 
@@ -378,6 +438,78 @@
         }
     }
 }
+
+// Search More Section
+
+.search_more {
+    margin-top: 56px;
+
+    h2 {
+        font-size: 18px;
+    }
+
+    &__tabs {
+        button {
+            max-width: 170px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            
+            font-size: 12px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+
+            border-radius: 20px;
+            outline: none !important;
+            box-shadow: none !important;
+            
+            background-color: rgba(137,150,174,.1);
+
+            &:hover {
+                background-color: #fff;
+                opacity: .65;
+            }
+        }
+
+        &--active {
+            background-color: #fff !important;
+            margin-right: 8px;
+        }
+    }
+
+    .flex-gap {
+        gap: 20px;
+        padding-top: 28px;
+    }
+
+    &__option {
+        cursor: pointer;
+        border-radius: 16px;
+        padding: 21px;
+
+        &--text {
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 10px;
+            max-width: 200px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: 18px;
+            white-space: nowrap;
+        }
+
+        button {
+            transition: .3s ease-in-out;
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
 
 // Trade In Section
 

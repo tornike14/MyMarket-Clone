@@ -486,6 +486,12 @@ section {
   .main_section__slider_box a {
     width: 100%;
   }
+  .search_more__tabs {
+    margin-top: 30px;
+  }
+  .search_more__option {
+    width: 380px;
+  }
   .tradeIn__gif {
     height: 150px;
     margin-bottom: 0;
@@ -516,6 +522,12 @@ section {
   }
   .main_section__slider_box a {
     width: 100%;
+  }
+  .search_more__tabs {
+    margin-top: 30px;
+  }
+  .search_more__option {
+    width: 400px;
   }
   .tradeIn__gif {
     height: 150px;
@@ -548,6 +560,12 @@ section {
   .main_section__slider_box a {
     width: 185px;
   }
+  .search_more__tabs {
+    margin-top: 0;
+  }
+  .search_more__option {
+    width: 500px;
+  }
   .tradeIn__gif {
     height: 320px;
   }
@@ -577,6 +595,12 @@ section {
   }
   .main_section__slider_box a {
     width: 185px;
+  }
+  .search_more__tabs {
+    margin-top: 0;
+  }
+  .search_more__option {
+    width: 380px;
   }
   .tradeIn__gif {
     height: 320px;
@@ -608,6 +632,12 @@ section {
   .main_section__slider_box a {
     width: 170px;
   }
+  .search_more__tabs {
+    margin-top: 0;
+  }
+  .search_more__option {
+    width: 380px;
+  }
   .tradeIn__gif {
     height: 320px;
   }
@@ -637,6 +667,12 @@ section {
   }
   .main_section__slider_box a {
     width: 185px;
+  }
+  .search_more__tabs {
+    margin-top: 0;
+  }
+  .search_more__option {
+    width: 400px;
   }
   .tradeIn__gif img {
     height: 320px;
@@ -792,6 +828,71 @@ section {
 
 .main_section__slider_box a:hover {
   background-color: #e6e6e6 !important;
+}
+
+.search_more {
+  margin-top: 56px;
+}
+
+.search_more h2 {
+  font-size: 18px;
+}
+
+.search_more__tabs button {
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 20px;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background-color: rgba(137, 150, 174, 0.1);
+}
+
+.search_more__tabs button:hover {
+  background-color: #fff;
+  opacity: .65;
+}
+
+.search_more__tabs--active {
+  background-color: #fff !important;
+  margin-right: 8px;
+}
+
+.search_more .flex-gap {
+  gap: 20px;
+  padding-top: 28px;
+}
+
+.search_more__option {
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 21px;
+}
+
+.search_more__option--text {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.search_more__option button {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.search_more__option button:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .tradeIn {
