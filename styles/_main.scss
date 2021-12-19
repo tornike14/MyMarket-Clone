@@ -413,3 +413,43 @@
         }
     }
 }
+
+// Categories Section
+
+.categories {
+    margin-bottom: 56px;
+
+    .row {
+        gap: 28px;
+    }
+
+    &__item {
+        width: 185px;
+        text-decoration: none;
+        
+        &--img-wrapper {
+            width: 184px;
+            height: 184px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: .2s ease-in-out;
+
+            img {
+                width: 124px;
+                height: 124px;
+            }
+        }
+
+        &--text {
+            span {
+                font-size: 13px !important;
+            }
+        }
+
+        &:hover {
+            .categories__item--img-wrapper {
+                background-color: $mainYellow;
+            }
+        }
+    }
+}
