@@ -480,9 +480,22 @@
         }
     }
 
+    &__slider {
+        border-radius: 16px;
+
+        a {
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+
     &__filter_data {
         border-radius: 16px;
     }
+
 
     &__slider_box {
         background-color: $iconHover;

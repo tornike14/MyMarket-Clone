@@ -862,6 +862,16 @@ section {
   line-height: 16px;
 }
 
+.main_section__slider {
+  border-radius: 16px;
+}
+
+.main_section__slider a img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .main_section__filter_data {
   border-radius: 16px;
 }
