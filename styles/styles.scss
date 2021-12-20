@@ -1,11 +1,12 @@
 // Project imports
 @import "./variables";
-@import "./mixins";
 @import "./basics";
 @import "./header";
 @import "./main";
 @import "./footer";
 
+
+// Imported one of the Mymarket's font
 @font-face {
     font-family: Helvatic-neue;
     src: url('helvetica-neue-lt.woff2') format('woff2');

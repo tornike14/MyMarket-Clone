@@ -3,18 +3,17 @@
         height: auto;
 
         &__filter_data {
-            background-color: transparent;
             width: 100%;
             height: auto;
             padding: 0;
+            background-color: transparent;
         }
 
         &__slider_box {
             padding: 0;
 
             a {
-                width: 100%;
-                
+                width: 100%;              
             }
         }
     }
@@ -66,10 +65,10 @@
         height: auto;
 
         &__filter_data {
-            background-color: transparent;
             width: 100%;
             height: auto;
             padding: 0;
+            background-color: transparent;
         }
 
         &__slider_box {
@@ -128,10 +127,10 @@
         height: 600px;
 
         &__filter_data {
-            background-color: #fff;
             width: 100%;
             height: 100%;
             padding: 40px;
+            background-color: #fff;
         }
 
         &__slider_box {
@@ -189,10 +188,10 @@
         height: 600px;
    
         &__filter_data {
-            background-color: #fff;
             width: calc(100% - 324px);
             height: 100%;
             padding: 40px;
+            background-color: #fff;
         }
 
         &__slider_box {
@@ -251,10 +250,10 @@
         height: 600px;
 
         &__filter_data {
-            background-color: #fff;
             width: calc(100% - 324px);
             height: 100%;
             padding: 40px;
+            background-color: #fff;
         }
 
         &__slider_box {
@@ -312,10 +311,10 @@
         height: 600px;
 
         &__filter_data {
-            background-color: #fff;
             width: calc(100% - 324px);
             height: 100%;
             padding: 40px;
+            background-color: #fff;
         }
 
         &__slider_box {
@@ -373,10 +372,10 @@
 
 
 .main_wrapper {
-    background-color: #f1f3f6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f1f3f6;
 }
 
 .catalog {
@@ -398,8 +397,8 @@
         height: 58px;
 
         a {
-            font-size: 12px;
             color: $blackText;
+            font-size: 12px;
             text-decoration: none;
         }
 
@@ -409,9 +408,9 @@
     }
 
     &__sales_btn {
+        position: relative;
         color: #ff3b30;
         background-color: #ffe9e8;
-        position: relative;
         border-radius: 32px;
         transition: .3s ease-in-out;
 
@@ -432,12 +431,12 @@
 
 .main_section {
     &__filter {
+        position: absolute;
         width: 300px;
         height: 600px;
         padding: 30px 0 12px;
         background-color: #fff;
         border-radius: 16px;
-        position: absolute;
         z-index: 100;
 
         li {
@@ -474,8 +473,8 @@
         &--text {
             span {
                 font-size: 14px;
-                cursor: pointer;
                 line-height: 16px;
+                cursor: pointer;
             }
         }
     }
@@ -491,22 +490,20 @@
         }
     }
 
-
     &__filter_data {
         border-radius: 16px;
     }
-
 
     &__slider_box {
         background-color: $iconHover;
         border-radius: 14px;
 
         a {
-            border-radius: 8px;
-            min-height: 96px;
-            flex-shrink: 0;
             height: 100%;
+            min-height: 96px;
             min-width: 170px;
+            flex-shrink: 0;
+            border-radius: 8px;
             transition-property: transform;
             text-decoration: none;
             transition: .2s ease-in-out;
@@ -537,17 +534,16 @@
         button {
             max-width: 170px;
             overflow: hidden;
+            font-size: 12px;
             text-overflow: ellipsis;
             white-space: nowrap;
             
-            font-size: 12px;
             padding-top: 7px;
             padding-bottom: 7px;
 
             border-radius: 20px;
             outline: none !important;
-            box-shadow: none !important;
-            
+            box-shadow: none !important;         
             background-color: rgba(137,150,174,.1);
 
             &:hover {
@@ -557,8 +553,8 @@
         }
 
         &--active {
-            background-color: #fff !important;
             margin-right: 8px;
+            background-color: #fff !important;
         }
     }
 
@@ -568,15 +564,16 @@
     }
 
     &__option {
-        cursor: pointer;
-        border-radius: 16px;
         padding: 21px;
+        border-radius: 16px;
+        cursor: pointer;
 
         &--text {
+            max-width: 200px;
+            margin-right: 10px;
+
             font-size: 14px;
             font-weight: bold;
-            margin-right: 10px;
-            max-width: 200px;
             text-overflow: ellipsis;
             overflow: hidden;
             line-height: 18px;
@@ -620,8 +617,8 @@
 
         a {
             color: #fff;
-            border-radius: 8px;
             background-color: $mainYellow;
+            border-radius: 8px;
 
             &:hover {
                 color: #fff;
@@ -637,15 +634,15 @@
     margin-bottom: 56px;
 
     &__wrapper {
+        padding: 40px 32px;
         background-color: #fff;
         border-radius: 16px;
-        padding: 40px 32px;
 
         &--vip_icon {
-            border-radius: 11px;
-            padding: 0 7px;
             height: 22px;
+            padding: 0 7px;
             background-color: $mainYellow;
+            border-radius: 11px;
             font-size: 10px;
             font-weight: bold;
         }
@@ -653,8 +650,8 @@
 
     &__wrapper_header {
         a {
-            font-size: 13px;
             color: #4a6cfa!important;
+            font-size: 13px;
             text-decoration: underline;
         }
     }
@@ -665,11 +662,10 @@
 
     &__wrapper_item {
         a {
-            text-decoration: none;
             width: 125px;
+            text-decoration: none;
             overflow: hidden;
             display: inherit;
-
 
             &:hover {
                 div:first-child {
@@ -706,19 +702,6 @@
             div:last-child {
                 font-size: 12px;
                 color: $greyText;
-
-            }
-
-            .lari {
-                display: inline-block;
-                font-family: Lari!important;
-                font-size: inherit;
-                font-stretch: normal;
-                font-style: normal;
-                font-feature-settings: normal;
-                font-variant: normal;
-                line-height: 1;
-                text-rendering: auto; 
             }
         }
         
@@ -740,8 +723,8 @@
         &--img-wrapper {
             width: 184px;
             height: 184px;
-            border-radius: 50%;
             background-color: #fff;
+            border-radius: 50%;
             transition: .2s ease-in-out;
 
             img {
@@ -776,15 +759,15 @@
     }
 
     &__content {
-        flex-wrap: wrap;
         gap: 20px;
+        flex-wrap: wrap;
     }
 
     &__block_images {
         border-radius: 16px;
         padding: 12px;
 
-        &>* {
+        & > * {
             padding: 12px;
         }
 
@@ -796,8 +779,6 @@
 
             .sales_hover {
                 position: absolute;
-                background-color: rgba(39,42,55,.95);
-                border-radius: 10px;
                 width: 100%;
                 height: 100%;
                 top: 0;
@@ -806,6 +787,8 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                background-color: rgba(39,42,55,.95);
+                border-radius: 10px;
                 opacity: 0;
                 transform: translate3d(0,100%,0);
                 transition: .3s ease-in-out;
@@ -817,19 +800,19 @@
 
                 div:last-child {
                     position: relative;
+                    color: #0ec604;
                     font-size: 12px;
                     line-height: 21px;
-                    color: #0ec604;
 
                     &::after {
                         content: "";
                         position: absolute;
                         width: 100%;
                         height: 2px;
-                        background-color: #fff;
                         top: 50%;
-                        transform: translateY(-50%);
                         left: 0;
+                        background-color: #fff;
+                        transform: translateY(-50%);
                     }
                 }
             }
@@ -846,7 +829,6 @@
     &__sm_card {
         border-radius: 10px;
         
-
         img {
             object-fit: cover;
         }
@@ -860,10 +842,10 @@
         }
 
         &--green {
+            padding: 4px 7px;
             font-size: 12px;
             font-weight: bold;
             line-height: 14px;
-            padding: 4px 7px;
             border-radius: 11px;
             background-color: #0ec604;
         }
@@ -874,5 +856,4 @@
             color: #4a6cfa!important;
         }
     }
-
 }
